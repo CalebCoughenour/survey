@@ -12,5 +12,11 @@ $("form#animal").submit(function(event) {
   $("#animalAnswer").text(result);
 });
 
+$("form#genderForm").submit(function(event) {
+  event.preventDefault();
+  const result = $("input:radio[name=gender]:checked").val();
+  $("#genderAnswer").text(result);
+});
+
 
 });

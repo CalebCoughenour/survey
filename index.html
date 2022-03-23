@@ -34,7 +34,7 @@
 
     <br>
 
-    <form method="post" action="/Tests/Post">
+    <form id="genderForm">
       <fieldset>
       <label for="gender">Choose Your Gender:</label>
     <div class="radio">
@@ -57,18 +57,25 @@
     </div>
     <br>
     </fieldset>
+    <button type="submit" class="btn">Enter</button>
     </form>
 
+    <form id="dateForm">
     <div class="form-group">
       <label for="born">Date of Birth:</label>
       <input id="born" class="form-control" type="date">
+      <button type="submit" class="btn">Enter</button>
     </div>
+    </form>
 
+    <form id="colorForm">
     <div class="form-group">
       <label for="color">What Is Your Favorite Color?</label>
       <input id="color" class="form-control" type="color">
+      <button type="submit" class="btn">Enter</button>
     </div>
-
+    </form>
+  
 
     <div id="nameAnswer">
 
@@ -80,7 +87,7 @@
 
     </div>
     <div id="colorAnswer">
-      
+
     </div>
 
 
