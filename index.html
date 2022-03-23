@@ -10,10 +10,55 @@
 <body>
   <div class="container">
     <h1>Superbly Splenderific Survey</h1>
-    <form id="formOne">
+    <form id="name">
       <label for="usersName">Enter Your Name:</label>
       <input id="usersName" class="form-control" type="text">
     </form>
+
+    <form id="animal">
+      <label for="favoriteAnimal">Choose Your Favorite Animal:</label>
+      <select class="form-control" id="favoriteAnimal">
+        <option>Lion</option>
+        <option>Monkey</option>
+        <option>Dolphin</option>
+        <option>Dog</option>
+        <option>Fish</option>
+        <option>Cat</option>
+        <option>Other...</option>
+    </select>
+    </form>
+
+    <br>
+
+    <form method="post" action="/Tests/Post">
+      <fieldset>
+      <label for="gender">Choose Your Gender:</label>
+    <div class="radio">
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="gender" value="other">
+        Other
+      </label>
+    </div>
+    <br>
+    </fieldset>
+    </form>
+
+    <div class="form-group">
+      <label for="born">Date of Birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
 
 
 
