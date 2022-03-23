@@ -6,7 +6,11 @@ $("form#name").submit(function(event) {
   $("#nameAnswer").text(result);
 });
 
-
+$("form#animal").submit(function(event) {
+  event.preventDefault();
+  const result = $("#favoriteAnimal").val();
+  $("#animalAnswer").text(result);
+});
 
 
 });
