@@ -18,5 +18,11 @@ $("form#genderForm").submit(function(event) {
   $("#genderAnswer").text(result);
 });
 
+$("form#dateForm").submit(function(event) {
+  event.preventDefault();
+  const result = $("#born").val();
+  $("#dateAnswer").text(result);
+});
+
 
 });
