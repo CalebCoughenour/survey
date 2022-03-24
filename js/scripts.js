@@ -1,28 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function(event) {
 
-$("form#name").submit(function(event) {
-  event.preventDefault();
-  const result = $("#usersName").val();
-  $("#nameAnswer").text(result);
-});
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    const resultName = $("#usersName").val();
+    const resultAnimal = $("#favoriteAnimal").val();
+    const resultGender = $("input:radio[name=gender]:checked").val();
+    const resultBorn = $("#born").val();
+    const resultColor = $("#color").val();
+    $("#nameAnswer").text(resultName);
+    $("#animalAnswer").text(resultAnimal);
+    $("#genderAnswer").text(resultGender);
+    $("#dateAnswer").text(resultBorn);
+    $("#colorAnswer").text(resultColor);
+  });
 
-$("form#animal").submit(function(event) {
-  event.preventDefault();
-  const result = $("#favoriteAnimal").val();
-  $("#animalAnswer").text(result);
-});
-
-$("form#genderForm").submit(function(event) {
-  event.preventDefault();
-  const result = $("input:radio[name=gender]:checked").val();
-  $("#genderAnswer").text(result);
-});
-
-$("form#dateForm").submit(function(event) {
-  event.preventDefault();
-  const result = $("#born").val();
-  $("#dateAnswer").text(result);
-});
 
 
 });
+
+
+
+

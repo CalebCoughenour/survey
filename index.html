@@ -10,15 +10,10 @@
 <body>
   <div class="container">
     <h1>Superbly Splenderific Survey</h1>
-
-
-    <form id="name">
+    <form id="formOne">
       <label for="usersName">Enter Your Name:</label>
       <input id="usersName" class="form-control" type="text">
-      <button type="submit" class="btn">Enter</button>
-    </form>
-
-    <form id="animal">
+      <br>
       <label for="favoriteAnimal">Choose Your Favorite Animal:</label>
       <select class="form-control" id="favoriteAnimal">
         <option>Lion</option>
@@ -29,53 +24,44 @@
         <option>Cat</option>
         <option>Other...</option>
       </select>
-      <button type="submit" class="btn">Enter</button>
-    </form>
-
-    <br>
-
-    <form id="genderForm">
+      <br>
       <fieldset>
-      <label for="gender">Choose Your Gender:</label>
-    <div class="radio">
-      <label>
-        <input type="radio" name="gender" value="male">
-        Male
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="gender" value="female">
-        Female
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="gender" value="other">
-        Other
-      </label>
-    </div>
-    <br>
+        <label for="gender">Choose Your Gender:</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="other">
+            Other
+          </label>
+          </div>
     </fieldset>
-    <button type="submit" class="btn">Enter</button>
-    </form>
 
-    <form id="dateForm">
+    <br>
+
     <div class="form-group">
       <label for="born">Date of Birth:</label>
       <input id="born" class="form-control" type="date">
-      <button type="submit" class="btn">Enter</button>
     </div>
-    </form>
 
-    <form id="colorForm">
+    <br>
+
     <div class="form-group">
       <label for="color">What Is Your Favorite Color?</label>
       <input id="color" class="form-control" type="color">
       <button type="submit" class="btn">Enter</button>
     </div>
     </form>
-  
 
     <div id="nameAnswer">
 
